@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#319c86</color>
+    <color name="colorPrimaryDark">#258d73</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBar">#dad9d9</color>
+
+    <color name="btn_background">#f5f5f5</color>
+    <color name="brn_edge">#D6D6D6</color>
+
+    <color name="button_background_normal">#F5F5F5</color>
+    <color name="button_background_pressed">#bababa</color>
+    <color name="button_edge">#D6D6D6</color>
+
+    <color name="amount_num_color">#FF7718</color>
+
+    <!--//////////////////////////////////////////////////////////////TopPay-->
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="setting_item_color">#ededed</color>
+    <color name="setting_item_title_color">#000000</color>
+    <color name="setting_item_divider_line_color">#c7c7c7</color>
+    <color name="setting_color">#e6e6e6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#464646</color>
+    <color name="textColorError">#ffff0000</color>
+
+    <color name="text_red">#F56010</color>
+
+
+    <color name="bg_gray">#F0F0F0</color>
+    <color name="color_activity_bg">#EFEFEF</color>
+    <!--<color name="amount_num_color">#FF7718</color>-->
+    <color name="amount_btn_color">#D6D6D6</color>
+    <color name="amount_btn_enabled_color">#22B14C</color>
+
+    <color name="use_card_btn_color">#5da2ff</color>
+    <color name="lightblue">#0022FFFF</color>
+    <color name="system_manage_background">#f0f0f0</color>
+    <color name="btn_num_pressed">#ebebeb</color>
+
+    <color name="red">#ff2200</color>
+    <color name="green">#11ff11</color>
+    <color name="blue">#0088ff</color>
+    <color name="gray">#666666</color>
+    <color name="prigray">#f1f1f1</color>
+
+    //扫码相关
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorOrange">#eebe00</color>
+    <color name="white_gray_plus">#E2E7EB</color>
+    <!--<color name="white">#FFFFFF</color>-->
+    <color name="white_gray_black">#D1D4D9</color>
+    <color name="qr_code_white">#FFFFFFFF</color>
+    <color name="qr_code_flashlight_bg">#66000000</color>
+    <color name="qr_code_finder_mask">#80000000</color>
+    <color name="qr_code_flash_light_text_color">#66FFFFFF</color>
+    <color name="qr_code_finder_frame">#FFFFFFFF</color>
+    <color name="qr_code_finder_laser">#ef8394</color>
+    <color name="transparent">#00000000</color>
+    <color name="disable">#98a4a4</color>
+    <color name="theme">#1D9F9A</color>
+    <color name="ic_launcher_background">#1C9F32</color>
+</resources>

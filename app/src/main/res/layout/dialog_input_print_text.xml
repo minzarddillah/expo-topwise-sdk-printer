@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/ll">
+
+    <TextView
+        android:id="@+id/title_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:textSize="@dimen/setting_title_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:text="@string/print_input_style" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/qr_code_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/print_input_style_qrcode" />
+
+        <RadioButton
+            android:id="@+id/text_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/print_input_style_text" />
+
+        <RadioButton
+            android:id="@+id/barcode_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/print_input_style_barcode" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:text="@string/print_input_textsize" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/small_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/print_textsize_small" />
+
+        <RadioButton
+            android:id="@+id/normal_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/print_textsize_normal" />
+
+        <RadioButton
+            android:id="@+id/large_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/print_textsize_large" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:text="@string/print_input_align" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/left_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/print_align_left" />
+
+        <RadioButton
+            android:id="@+id/middle_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/print_align_center" />
+
+        <RadioButton
+            android:id="@+id/right_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/print_align_right" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/code_et"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="2dp"
+        android:hint="@string/print_input_default_text"
+        android:maxLines="20"
+        android:text="Topwise" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/print_dialog_nb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:id="@+id/print_dialog_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/determine" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+{
+  "name": "expo-topwise-sdk-printer",
+  "version": "0.1.0",
+  "description": "Expo module for Topwise SDK Printer",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "topwise",
+    "printer",
+    "sdk",
+    "android"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "expo": ">=45.0.0",
+    "react": "*",
+    "react-native": "*"
+  }
+}

@@ -1,0 +1,129 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+	<style name="cell_text_header" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">#FFF</item>
+		<item name="android:typeface">monospace</item>
+		<item name="android:textSize">12sp</item>
+	</style>
+
+	<style name="cell_text_body" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textColor">#000</item>
+		<item name="android:typeface">monospace</item>
+		<item name="android:textSize">12sp</item>
+	</style>
+	<style name="Button" parent="android:Widget.Material.Button">
+		<item name="android:colorControlHighlight">@android:color/black</item>
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:typeface">monospace</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+
+	<style name="AppTheme1" parent="@android:style/Theme.Light.NoTitleBar">
+		<!--<item name="android:colorPrimaryDark">@color/colorAccent</item>
+        <item name="android:colorPrimary">@color/colorAccent</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">#D01839</item>
+        <item name="android:switchStyle">@style/mySwitchStyle</item>-->
+		<item name="android:actionBarSize">70dp</item>
+	</style>
+
+	<style name="Dialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:layout_gravity">center</item>
+	</style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- 定义首页样式 -->
+    <style name="main_test">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">left|center</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:textSize">@dimen/text_size_13sp</item>
+		<item name="android:layout_margin">0dip</item>
+    </style>
+	<style name="AlertDialogCustom" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+	        <item name="android:textColor">#000000</item>
+	         <item name="android:textSize">30sp</item>
+	        <item name="android:textStyle">bold</item>
+	        <item name="android:typeface">sans</item>
+	</style>
+	
+	<style name = "leftbut">
+	    <item name = "android:textSize">@dimen/text_size_13sp</item>
+	    <item name = "android:gravity">center</item>
+	</style>
+
+	<style name="AlertDialog" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+		<!-- 这里设置背景为透明，为了隐藏边框 -->
+		<item name="android:windowBackground">@color/white</item>
+		<item name="android:windowNoTitle">true</item>
+		<!-- 这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+		<item name="android:topDark">@color/white</item>
+		<!-- 这里是修改内容区域背景颜色 -->
+		<item name="android:centerDark">@color/white</item>
+		<item name="android:windowAnimationStyle">@android:color/transparent</item>
+	</style>
+
+	<style name="dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item><!--边框-->
+		<item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+		<!-- 这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+		<item name="android:topDark">@color/black</item>
+		<item name="android:windowIsTranslucent">false</item><!--半透明-->
+		<item name="android:windowNoTitle">true</item><!--无标题-->
+		<!--<item name="android:windowBackground">@color/white</item>&lt;!&ndash;背景透明&ndash;&gt;-->
+		<item name="android:windowBackground">@color/white</item>
+		<item name="android:backgroundDimEnabled">false</item><!--模糊-->
+	</style>
+
+	<style name="MyDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+		<!-- 是否有边框 -->
+		<item name="android:windowFrame">@null</item>
+		<!--是否在悬浮Activity之上  -->
+		<item name="android:windowIsFloating">true</item>
+		<!-- 标题 -->
+		<item name="android:windowNoTitle">true</item>
+		<!--阴影  -->
+		<item name="android:windowIsTranslucent">true</item><!--半透明-->
+		<!--背景透明-->
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<!-- 还可以加入一些弹出和退出的动画 (lan)-->
+	</style>
+
+	<style name="LableTextView" parent="android:Widget.TextView">
+		<item name="android:textSize">16sp</item>
+		<item name="android:gravity">center|right</item>
+		<item name="android:layout_marginRight">5dp</item>
+		<item name="android:layout_marginLeft">5dp</item>
+	</style>
+
+	<style name="MyEditText" parent="android:Widget.EditText">
+		<item name="android:background">@drawable/edittext_selector</item>
+		<item name="android:textColor">@drawable/et_text_selector</item>
+		<item name="android:paddingLeft">10dp</item>
+	</style>
+	<style name="ThemeWithoutAnim" parent="AppTheme">
+		<item name="android:windowAnimationStyle">@style/Animation</item>
+	</style>
+	<style name="Animation">
+		<item name="android:windowEnterAnimation">@null</item>
+		<item name="android:windowExitAnimation">@null</item>
+	</style>
+</resources>

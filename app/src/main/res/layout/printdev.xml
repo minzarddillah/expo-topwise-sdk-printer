@@ -1,0 +1,268 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+    <include layout="@layout/left_scroll" />
+    <LinearLayout
+        android:id="@+id/main_linearlayout"
+        android:layout_width="0dip"
+        android:gravity="right"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <!-- get print status  -->
+
+        <TextView
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:text="@string/auto_cutting_paper"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/sw_auto_cutting"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/track"
+                android:checked="true"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="getPrintState"
+                        android:text="@string/print_status_str"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/get_print_message"
+                        android:onClick="getPrintMessage"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="setPrintGray"
+                        android:text="@string/set_print_gray"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="cuttingPaper"
+                        android:text="@string/cuttingPaper"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="setPrintLedState"
+                        android:text="@string/setPrintLedState"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printRollback"
+                        android:text="@string/printRollback"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printText"
+                        android:text="@string/print_text_str"
+                        android:textSize="@dimen/text_size_13sp" />
+
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printTemplate"
+                        android:text="@string/print_custom_text_str"
+                        android:textSize="@dimen/text_size_13sp" />
+
+
+                    <!-- print barcode -->
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printBarCode"
+                        android:text="@string/print_barcode_str"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <!-- print bitmap -->
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printBitmap"
+                        android:text="@string/print_bitmap_str"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printGrid"
+                        android:text="@string/print_grid"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printBigBuy"
+                        android:text="@string/print_big_buy_str"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printSmBuy"
+                        android:text="@string/print_small_buy_str"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printBitmaps"
+                        android:text="@string/print_bitmaps_str"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printTickertape"
+                        android:text="@string/print_tickertape"
+                        android:textSize="@dimen/text_size_13sp" />
+
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printTickertapeReverse"
+                        android:text="print tickertape reverse"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printBlackBlock"
+                        android:text="@string/print_black_block"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printDiamond"
+                        android:text="@string/print_diamond"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:id="@+id/print_bias"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/print_bias"
+                        android:textSize="@dimen/text_size_13sp"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/print_bias_meter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printBiasForMeter"
+                        android:text="@string/print_bias_meter"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:id="@+id/print_ten_times_receipts"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="print_ten_times_receipts"
+                        android:text="@string/print_ten_times_receipts"
+                        android:textSize="@dimen/text_size_13sp" />
+
+
+                    <Button
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:onClick="printStringTest"
+                         android:text="@string/print_string_test"
+                         android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:onClick="printStringImageTest"
+                         android:text="@string/print_string_image_test"
+                         android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:onClick="printInputTest"
+                         android:text="@string/print_input_test"
+                         android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:onClick="printDrag"
+                         android:text="@string/print_drag_test"
+                         android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printHighTemperatureTest"
+                        android:text="@string/print_high_temperature_test"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printGalleryBitmap"
+                        android:text="Print Gallery Bitmap"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="printCompatibility"
+                        android:text="Print Compatibility"
+                        android:textSize="@dimen/text_size_13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

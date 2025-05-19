@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activity_list_default" translatable="false">
+        <item>com.cashlez.sdkprintertopwise.PrintDevActivity</item>
+    </string-array>
+
+    <string-array name="activity_list_default_title" translatable="false">
+        <item>@string/print</item>
+    </string-array>
+
+</resources>

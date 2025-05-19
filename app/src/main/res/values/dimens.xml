@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="button_width">120dp</dimen>
+
+    <!--<dimen name="title_sz">20sp</dimen>-->
+    <!-- func_sel. -->
+    <dimen name="funcsel_btn_txt_sz">16sp</dimen>
+    <dimen name="funcsel_btn_padding_left">15dp</dimen>
+    <dimen name="funcsel_btn_padding_top">10dp</dimen>
+
+    <dimen name="action_bar_height">20sp</dimen>
+    <dimen name="btn_txt_sz">16sp</dimen>
+
+    <dimen name="search_card_pic_side">120dp</dimen>
+    <dimen name="search_card_pic_text">10dp</dimen>
+    <dimen name="search_card_text_sz">18sp</dimen>
+
+    <dimen name="size_magin_action_bar">10dp</dimen>
+
+    <dimen name="title_size">16sp</dimen>
+    <dimen name="setting_title_size">20sp</dimen>
+    <dimen name="setting_item_divider_height">20dp</dimen>
+    <dimen name="setting_item_padding">10dp</dimen>
+
+    <dimen name="setting_item_padding_7">7dp</dimen>
+
+    <dimen name="divider_height">1sp</dimen>
+
+    <dimen name="dp_two">2dp</dimen>
+    <dimen name="dp_fourty_one">41dp</dimen>
+    <dimen name="dp_twenty_two">22dp</dimen>
+    <dimen name="dp_six">6dp</dimen>
+    <dimen name="sp_eighteen">18sp</dimen>
+    <dimen name="dp_fifty">50dp</dimen>
+    <dimen name="dp_fifty_five">55dp</dimen>
+    <dimen name="dp_sixhty">60dp</dimen>
+    <dimen name="dp_fifteen">15dp</dimen>
+    <dimen name="dp_three">3dp</dimen>
+    <dimen name="text_size_13sp">13dp</dimen>
+    <dimen name="title_bar_height">54dp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+</resources>
